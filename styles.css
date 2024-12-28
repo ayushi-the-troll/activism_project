@@ -1,0 +1,150 @@
+/* IMPORT FONTS */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+/* STYLE SECTIONING TAGS */
+* {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "JetBrains Mono";
+}
+
+body {
+  background-color: #efefef;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* STYLE TEXT */
+
+h1 {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  color: #d1345b;
+}
+
+#purpose {
+  text-align: center;
+  padding: 30px;
+}
+
+.gwc {
+  color: #34d1bf;
+  font-weight: 750;
+}
+
+.orgs,
+.articles {
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+#orgList,
+#articleList {
+  padding-left: 35px;
+  color: #34d1bf;
+}
+
+#gwcdonate {
+  padding-bottom: 30px;
+}
+#wigdonate {
+  padding-bottom: 30px;
+}
+#witdonate {
+  padding-bottom: 30px;
+}
+
+/* STYLE IMAGES */
+#woman_gaming {
+  width: 52%;
+  margin: 50px;
+  border: solid;
+  border-color: #d1345b;
+  border-width: 10px;
+  border-radius: 5px;
+}
+#controller {
+  width: 27%;
+  border: solid;
+  border-color: #d1345b;
+  border-width: 10px;
+  border-radius: 5px;
+}
+
+.flex-container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.flex-item {
+  flex-basis: 100%;
+  margin: 1%;
+}
+
+@media screen and (max-width: 850px;) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* STYLE NAV BAR */
+.navHashtag {
+  display: inline-block;
+  color: #3454d1;
+  font-weight: 800;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(20), cursor 0.4s step-end infinite alternate;
+}
+nav {
+  padding: 20px;
+  margin: 0px;
+  text-align: left;
+}
+
+/* STYLE BUTTONS */
+button {
+  padding: 10px;
+  background-color: #3454d1;
+  color: #efefef;
+  border-radius: 2px;
+  border: none;
+  animation-name: button;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* ADD MORE! */
+@keyframes button {
+  from {
+    background-color: #3454d1;
+  }
+  to {
+    background-color: #efefef;
+  }
+
+  from {
+    color: #efefef;
+  }
+  to {
+    color: #3454d1;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
